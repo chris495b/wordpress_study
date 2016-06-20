@@ -1,0 +1,19 @@
+/*
+  Theme Name:Bootstrap to Wordpress
+  Theme URI:http://www.google.com
+  Author:christie Dsouza
+  Author URI:http://www.facebook.com
+  Description:Example theme for practise
+  License: GNU General Public License v2 or later
+  license URI:http://www.gnu.org/licenses/gpl-2.0.html
+  Text Domin:bootstrap-to-wordpress
+*/
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.admin-bar .navbar-fixed-top{
+  padding-top: 32px;
+}
