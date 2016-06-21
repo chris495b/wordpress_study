@@ -11,9 +11,48 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 20px;git
 }
 
 .admin-bar .navbar-fixed-top{
   padding-top: 32px;
+}
+
+@media (min-width:768px) {
+  .sub-menu{
+    display: none !important;
+    position:absolute !important;
+    background:#222 !important;
+    padding:10px 15px !important;
+    width:200px !important;
+  }
+  li:hover .sub-menu{
+    display: block !important;
+  }
+}
+
+.sub-menu li{
+  margin-bottom: 10px !important;
+  list-style:none !important;
+}
+
+.sub-menu li:last-child{
+  margin-bottom: 0px !important;
+}
+
+.sub-menu a:hover{
+  color:#fff !important;
+}
+
+.current-menu-item > a,.menu-item-has-children > a{
+  background: #000;
+}
+
+.menu-item-has-children li a{
+  background:inherit;
+}
+
+.menu-item-has-children .menu-item a{
+  color:#fff !important;
+  font-weight:bold !important;
 }
