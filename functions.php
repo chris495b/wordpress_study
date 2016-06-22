@@ -23,5 +23,23 @@ function register_theme_menu(){
   register_nav_menus(array('header-menu' => __('Header Menu')));
 }
 
-add_action('init','register_theme_menu')
+add_action('init','register_theme_menu');
+
+function create_widget( $name, $id, $description ){
+
+  register_sidebar(array(
+    'name'=>__($name),
+    'id'=>$id,
+    'description'=>__($description),
+    'before_widget'=>'<div class="widget">',
+    'after_widget'=>'</div>',
+    'before_title'=>'<h3>',
+    'after_title'=>'</h3>'
+  ));
+}
+
+create_widget('Front Page Left','front-left','Display on the left of the home page');
+create_widget('Front Page Center','front-center','Display on the center of the home page');
+create_widget('Front Page Right','front-right','Display on the right of the home page');
+// Creat_widget('Page Sidebar','page','Displays on the side of pages with a side bar');
 ?>

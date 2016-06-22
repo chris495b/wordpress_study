@@ -44,7 +44,7 @@ body {
   color:#fff !important;
 }
 
-.current-menu-item > a,.menu-item-has-children > a{
+.current-menu-item > a{
   background: #000;
 }
 
