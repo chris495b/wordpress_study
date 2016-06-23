@@ -41,5 +41,5 @@ function create_widget( $name, $id, $description ){
 create_widget('Front Page Left','front-left','Display on the left of the home page');
 create_widget('Front Page Center','front-center','Display on the center of the home page');
 create_widget('Front Page Right','front-right','Display on the right of the home page');
-// Creat_widget('Page Sidebar','page','Displays on the side of pages with a side bar');
+create_widget('Page Sidebar','page','Displays on the side of pages with a side bar');
 ?>

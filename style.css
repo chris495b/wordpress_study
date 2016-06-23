@@ -56,3 +56,12 @@ body {
   color:#fff !important;
   font-weight:bold !important;
 }
+
+.sidebar{
+  margin-top: 40px;
+  color:#444;
+}
+
+.sidebar h3{
+  color:#888;
+}
