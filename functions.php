@@ -19,6 +19,8 @@ add_action( 'wp_enqueue_scripts','theme_js' );
 // add_filter('show_admin_bar','__return_false');
 
 add_theme_support('menu');
+add_theme_support('post-thumbnails');
+
 function register_theme_menu(){
   register_nav_menus(array('header-menu' => __('Header Menu')));
 }
@@ -41,5 +43,7 @@ function create_widget( $name, $id, $description ){
 create_widget('Front Page Left','front-left','Display on the left of the home page');
 create_widget('Front Page Center','front-center','Display on the center of the home page');
 create_widget('Front Page Right','front-right','Display on the right of the home page');
+
 create_widget('Page Sidebar','page','Displays on the side of pages with a side bar');
+create_widget('Blog Sidebar','blog','Displays on the side of pages in the blog section');
 ?>
